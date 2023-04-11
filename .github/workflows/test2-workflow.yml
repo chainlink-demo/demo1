@@ -6,3 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Preparation"
+  prevents:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Prevents"
