@@ -6,7 +6,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Preparation"
+    
   prevents:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Prevents"
+    needs: preparation
+  poor:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Poor"
+    needs: prevents
+  performance:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Performance"
+    needs: preparation
