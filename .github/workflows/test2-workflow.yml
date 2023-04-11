@@ -2,7 +2,7 @@ name: chainlink-ftw
 run-name: ${{ github.actor }} is preparing for the ChainLink interview
 on: [push]
 jobs:
-  prepartion:
+  preparation:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Preparation"
